@@ -1,9 +1,5 @@
-/*
-@author Yashasvi
-@versio 1.0
-*/
-class HelloApp{
-	public static void main(String[] args){
-		System.out.println("This is dev branch");
-	}
+public class HelloApp{
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
 }
