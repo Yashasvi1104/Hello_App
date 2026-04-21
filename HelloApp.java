@@ -1,18 +1,15 @@
-public class HelloEnhancedLoop {
+public class HelloSubstring {
     public static void main(String[] args) {
         if (args.length == 0) {
             System.out.println("Hello, World!");
         } else {
-            System.out.print("Hello ");
-            boolean first = true;
+            String result = "Hello ";
             for (String name : args) {
-                if (!first) {
-                    System.out.print(", ");
-                }
-                System.out.print(name);
-                first = false;
+                result += name + ", ";
             }
-            System.out.println("!");
+            // remove last ", "
+            result = result.substring(0, result.length() - 2);
+            System.out.println(result + "!");
         }
     }
 }
